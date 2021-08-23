@@ -16,7 +16,7 @@ The categorical and numerical data is from Kaggle: Customer Churn Prediction 202
 git clone https://github.com/aws-samples/churn-prediction-with-text-and-interpretability.git
 conda create -n py39 python=3.9
 conda activate py39
-cd churn_prediction_with_text_and_interpretability
+cd churn-prediction-with-text-and-interpretability
 pip install -r requirements.txt
 ```
 
