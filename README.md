@@ -8,7 +8,7 @@ The categorical and numerical data is from Kaggle: Customer Churn Prediction 202
 
 ## Blog Post
 
-[Medium blog post](link to be added)
+[Medium blog post](https://medium.com/@daniel.herkert1/customer-churn-prediction-with-text-and-interpretability-bd3d57af34b1)
 
 ## Installation
 
