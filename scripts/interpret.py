@@ -287,17 +287,22 @@ def get_important_keywords(
 
 def obtain_context(
     chats_list,
-    keyword
+    keyword,
+    limit=3
 ):
-    """Prints out Sentences where specified keyword occurs.
+    """Prints out limited number of chats where keyword occurs.
     """
     nlp = spacy.load('en_core_web_sm')
-    
+    counter = 0
     for chat in chats_list:
         doc = nlp(chat)
         for sent in doc.sents:
-            if keyword in sent.text:
+            if keyword in sent.text and counter < limit:
                 print(sent.text)
+                print('\n')
+                counter+=1
+        if counter >= limit:
+            break
 
     return None
 
